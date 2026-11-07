@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions & Batch Timings | REA Abacus & Tuition Point Kakatiya Hills</title>
+  <meta name="description" content="Enroll your child at REA Abacus & Tuition Point Kakatiya Hills, Pragathi Nagar Hyderabad. Transparent fee structure, flexible weekday/weekend batches, and free demo classes via WhatsApp.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#1E40AF',
+              navy: '#0F172A',
+              amber: '#F59E0B',
+              emerald: '#10B981',
+              coral: '#F43F5E'
+            }
+          },
+          fontFamily: {
+            display: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-400 selection:text-slate-900 pb-16 md:pb-0">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-950 text-white text-xs py-2 px-4 border-b border-blue-800/60 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="bg-amber-400 text-slate-900 px-2 py-0.5 rounded font-extrabold uppercase text-[10px] tracking-wide">Enrollment Desk</span>
+        <span class="hidden sm:inline text-blue-200">Limited Seats per batch (Max 8 students) to ensure 100% individual attention</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="https://wa.me/919703822227" target="_blank" class="hover:text-amber-300 flex items-center gap-1 font-semibold transition text-emerald-300">
+          <span>💬 WhatsApp:</span> +91 97038 22227
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="main-header" class="bg-white sticky top-[33px] z-30 transition-all duration-300 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-blue-700 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-blue-500/20 group-hover:scale-105 transition">
+          <span class="text-2xl">🧮</span>
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="text-2xl font-black font-display tracking-tight text-slate-900">REA</span>
+            <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded-full border border-amber-300">Academy</span>
+          </div>
+          <div class="text-[11px] font-semibold text-slate-500 tracking-wide uppercase">Abacus & Tuition Point</div>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+        <a href="about.html" class="hover:text-blue-600 transition">About Us</a>
+        <a href="programs.html" class="hover:text-blue-600 transition">Programs & Syllabus</a>
+        <a href="abacus-trainer.html" class="hover:text-blue-600 flex items-center gap-1 text-indigo-700 font-bold transition">
+          <span class="text-amber-500">✨</span> Virtual Abacus Lab
+        </a>
+        <a href="admissions.html" class="text-blue-600 font-bold transition">Admissions & Fees</a>
+        <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/919703822227?text=Hello%20REA%20Abacus!%20I%20would%20like%20to%20enroll%20my%20child." target="_blank" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-md hover:shadow-lg transition flex items-center gap-2">
+          <span>💬 Chat on WhatsApp</span>
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden">
+    <div class="fixed top-0 right-0 bottom-0 w-4/5 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">🧮</span>
+            <span class="font-display font-black text-lg text-slate-900">REA Abacus Point</span>
+          </div>
+          <button id="mobile-menu-close" class="p-2 text-slate-400 hover:text-slate-700 rounded-lg">✕</button>
+        </div>
+        <nav class="flex flex-col gap-4 mt-6 text-base font-semibold text-slate-700">
+          <a href="index.html" class="p-2 rounded-lg hover:bg-blue-50">Home</a>
+          <a href="about.html" class="p-2 rounded-lg hover:bg-blue-50">About Us & Pedagogy</a>
+          <a href="programs.html" class="p-2 rounded-lg hover:bg-blue-50">Programs & Levels</a>
+          <a href="abacus-trainer.html" class="p-2 rounded-lg hover:bg-amber-50 text-amber-900">✨ Virtual Abacus Lab</a>
+          <a href="admissions.html" class="p-2 rounded-lg bg-blue-50 text-blue-600 font-bold">Admissions & Batches</a>
+          <a href="contact.html" class="p-2 rounded-lg hover:bg-blue-50">Contact & Location</a>
+        </nav>
+      </div>
+      <div class="pt-6 border-t border-slate-100 space-y-3">
+        <a href="https://wa.me/919703822227?text=Hello%20REA%20Abacus!%20I%20would%20like%20to%20book%20a%20Free%20Trial%20Class." target="_blank" class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-md text-sm text-center block">
+          💬 Book Free Trial on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="bg-gradient-to-b from-blue-900 via-indigo-900 to-blue-950 text-white py-16 lg:py-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <span class="badge-pill bg-amber-400 text-slate-900 font-bold text-xs uppercase tracking-wider mb-4">
+        Admissions 2026 Open
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-black font-display tracking-tight text-white max-w-3xl mx-auto">
+        Join the REA Learning Family
+      </h1>
+      <p class="mt-4 text-blue-200 text-sm sm:text-base max-w-2xl mx-auto">
+        Transparent fee structures, small 8-student batches, and personalized attention right here at Kakatiya Hills, Pragathi Nagar.
+      </p>
+    </div>
+  </section>
+
+  <!-- Step-by-Step Admission Process -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="badge-pill bg-blue-100 text-blue-800 border border-blue-200 text-xs mb-3">Seamless Onboarding</span>
+        <h2 class="text-3xl font-black font-display text-slate-900 tracking-tight">
+          How to Enroll in 4 Easy Steps
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">
+          We ensure your child begins at the exact right difficulty level for maximum growth and zero stress.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200">
+          <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white font-black flex items-center justify-center text-lg mb-4 shadow">
+            1
+          </div>
+          <h3 class="text-base font-bold font-display text-slate-900 mb-2">WhatsApp Consultation</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Send us a message on WhatsApp. Share your child's age and current grade to check slot availability.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white font-black flex items-center justify-center text-lg mb-4 shadow">
+            2
+          </div>
+          <h3 class="text-base font-bold font-display text-slate-900 mb-2">Free Center Demo</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Visit our Kakatiya Hills center for an interactive 45-min demo. Our mentors conduct a friendly baseline assessment.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white font-black flex items-center justify-center text-lg mb-4 shadow">
+            3
+          </div>
+          <h3 class="text-base font-bold font-display text-slate-900 mb-2">Batch Selection</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Choose your preferred slot (after-school weekday evening or Saturday/Sunday weekend batch) based on your schedule.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200">
+          <div class="w-12 h-12 rounded-2xl bg-purple-600 text-white font-black flex items-center justify-center text-lg mb-4 shadow">
+            4
+          </div>
+          <h3 class="text-base font-bold font-display text-slate-900 mb-2">Welcome Kit &amp; Launch</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Receive student kit (Soroban board, curriculum workbooks, bag) and start the exciting cognitive journey!
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="https://wa.me/919703822227?text=Hello%20REA%20Abacus!%20I%20would%20like%20to%20schedule%20a%20Free%20Trial%20Class%20for%20my%20child." target="_blank" class="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-2xl shadow-xl transition transform hover:scale-105">
+          <span>💬 Book Free Demo on WhatsApp</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Batch Schedules Table -->
+  <section class="py-20 bg-slate-100 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="badge-pill bg-amber-100 text-amber-900 border border-amber-300 text-xs mb-3">Convenient Schedules</span>
+        <h2 class="text-3xl font-black font-display text-slate-900 tracking-tight">
+          Current Batch Timings &amp; Availability
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">
+          Kakatiya Hills Center operates 7 days a week with capped batches of 8 students.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm">
+            <thead class="bg-slate-900 text-white text-xs uppercase tracking-wider font-bold">
+              <tr>
+                <th class="px-6 py-4">Program</th>
+                <th class="px-6 py-4">Days / Mode</th>
+                <th class="px-6 py-4">Batch Slots</th>
+                <th class="px-6 py-4">Batch Size</th>
+                <th class="px-6 py-4 text-right">Inquire</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-700">
+              <tr class="hover:bg-slate-50 transition">
+                <td class="px-6 py-4 font-bold text-slate-900">
+                  Soroban Abacus (Junior, Ages 4-7)
+                </td>
+                <td class="px-6 py-4">
+                  <span class="bg-blue-100 text-blue-800 px-2.5 py-1 rounded-full text-xs font-semibold">Weekday / Weekend</span>
+                </td>
+                <td class="px-6 py-4">
+                  Tue &amp; Thu: 4:30 PM - 5:30 PM<br>
+                  Sat &amp; Sun: 10:00 AM - 11:00 AM
+                </td>
+                <td class="px-6 py-4">Max 8 Students</td>
+                <td class="px-6 py-4 text-right">
+                  <a href="https://wa.me/919703822227?text=Hi%2C%20I%20want%20to%20inquire%20about%20Junior%20Abacus%20batch%20timings." target="_blank" class="text-emerald-600 font-bold hover:underline">WhatsApp →</a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-slate-50 transition">
+                <td class="px-6 py-4 font-bold text-slate-900">
+                  Soroban Abacus (Senior, Ages 8-14)
+                </td>
+                <td class="px-6 py-4">
+                  <span class="bg-blue-100 text-blue-800 px-2.5 py-1 rounded-full text-xs font-semibold">Weekend Special</span>
+                </td>
+                <td class="px-6 py-4">
+                  Saturday: 4:00 PM - 6:00 PM<br>
+                  Sunday: 9:00 AM - 11:00 AM
+                </td>
+                <td class="px-6 py-4">Max 8 Students</td>
+                <td class="px-6 py-4 text-right">
+                  <a href="https://wa.me/919703822227?text=Hi%2C%20I%20want%20to%20inquire%20about%20Senior%20Abacus%20weekend%20batch." target="_blank" class="text-emerald-600 font-bold hover:underline">WhatsApp →</a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-slate-50 transition">
+                <td class="px-6 py-4 font-bold text-slate-900">
+                  School Tuitions: Primary (Class 1-5)
+                </td>
+                <td class="px-6 py-4">
+                  <span class="bg-indigo-100 text-indigo-800 px-2.5 py-1 rounded-full text-xs font-semibold">Mon to Fri</span>
+                </td>
+                <td class="px-6 py-4">
+                  4:30 PM - 6:00 PM Daily (Maths, Science, English)
+                </td>
+                <td class="px-6 py-4">Max 8 Students</td>
+                <td class="px-6 py-4 text-right">
+                  <a href="https://wa.me/919703822227?text=Hi%2C%20I%20want%20to%20inquire%20about%20Class%201-5%20Tuitions." target="_blank" class="text-emerald-600 font-bold hover:underline">WhatsApp →</a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-slate-50 transition">
+                <td class="px-6 py-4 font-bold text-slate-900">
+                  School Tuitions: Middle (Class 6-8)
+                </td>
+                <td class="px-6 py-4">
+                  <span class="bg-indigo-100 text-indigo-800 px-2.5 py-1 rounded-full text-xs font-semibold">Mon to Fri</span>
+                </td>
+                <td class="px-6 py-4">
+                  5:30 PM - 7:15 PM Daily
+                </td>
+                <td class="px-6 py-4">Max 8 Students</td>
+                <td class="px-6 py-4 text-right">
+                  <a href="https://wa.me/919703822227?text=Hi%2C%20I%20want%20to%20inquire%20about%20Class%206-8%20Tuitions." target="_blank" class="text-emerald-600 font-bold hover:underline">WhatsApp →</a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-slate-50 transition">
+                <td class="px-6 py-4 font-bold text-slate-900">
+                  High School Board Prep (Class 9 &amp; 10)
+                </td>
+                <td class="px-6 py-4">
+                  <span class="bg-indigo-100 text-indigo-800 px-2.5 py-1 rounded-full text-xs font-semibold">Mon to Sat</span>
+                </td>
+                <td class="px-6 py-4">
+                  6:30 PM - 8:30 PM (CBSE / ICSE / SSC)
+                </td>
+                <td class="px-6 py-4">Max 8 Students</td>
+                <td class="px-6 py-4 text-right">
+                  <a href="https://wa.me/919703822227?text=Hi%2C%20I%20want%20to%20inquire%20about%20Class%209-10%20Board%20Coaching." target="_blank" class="text-emerald-600 font-bold hover:underline">WhatsApp →</a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-slate-50 transition">
+                <td class="px-6 py-4 font-bold text-slate-900">
+                  Vedic Mathematics Speed System
+                </td>
+                <td class="px-6 py-4">
+                  <span class="bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full text-xs font-semibold">Weekend</span>
+                </td>
+                <td class="px-6 py-4">
+                  Saturday &amp; Sunday: 11:30 AM - 1:00 PM
+                </td>
+                <td class="px-6 py-4">Max 10 Students</td>
+                <td class="px-6 py-4 text-right">
+                  <a href="https://wa.me/919703822227?text=Hi%2C%20I%20want%20to%20inquire%20about%20Vedic%20Maths%20batch." target="_blank" class="text-emerald-600 font-bold hover:underline">WhatsApp →</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Clean WhatsApp Direct Action Card (Replaced dynamic form) -->
+  <section class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl shadow-2xl border border-indigo-900/50 text-center">
+        
+        <div class="w-16 h-16 bg-emerald-500 rounded-2xl mx-auto flex items-center justify-center text-3xl mb-4 shadow-lg shadow-emerald-500/20">
+          💬
+        </div>
+
+        <h3 class="text-2xl sm:text-3xl font-black font-display text-white mb-2">
+          Reserve Your Child’s Seat via WhatsApp
+        </h3>
+        <p class="text-slate-300 text-sm max-w-md mx-auto mb-8">
+          No complicated forms! Simply tap below to connect directly with our center coordinator on WhatsApp to confirm demo slots and enrollment details.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/919703822227?text=Hello%20REA%20Abacus!%20I%20would%20like%20to%20enroll%20my%20child%20for%20classes%20at%20Kakatiya%20Hills." target="_blank" class="w-full sm:w-auto px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-2xl shadow-xl transition transform hover:scale-105 flex items-center justify-center gap-2 text-sm">
+            <span>💬 Message on WhatsApp (+91 97038 22227)</span>
+          </a>
+          <a href="tel:+919703822227" class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold rounded-2xl transition text-sm">
+            <span>📞 Call Center</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">🧮</span>
+            <span class="text-lg font-black font-display text-white">REA Academy</span>
+          </div>
+          <p class="text-slate-400">Flat No. 102, Sai Sadguru Residency, Kakatiya Hills, NRI Colony, Pragati Nagar, Hyderabad — 500090.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3">Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-amber-400">Home</a></li>
+            <li><a href="about.html" class="hover:text-amber-400">About Us</a></li>
+            <li><a href="programs.html" class="hover:text-amber-400">Programs</a></li>
+            <li><a href="abacus-trainer.html" class="hover:text-amber-400">Virtual Abacus Lab</a></li>
+            <li><a href="admissions.html" class="text-amber-300 font-bold">Admissions</a></li>
+            <li><a href="contact.html" class="hover:text-amber-400">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3">Programs</h4>
+          <ul class="space-y-2">
+            <li><a href="programs.html#abacus" class="hover:text-amber-400">Soroban Abacus</a></li>
+            <li><a href="programs.html#tuition" class="hover:text-amber-400">School Tuitions</a></li>
+            <li><a href="programs.html#vedic" class="hover:text-amber-400">Vedic Maths</a></li>
+            <li><a href="programs.html#handwriting" class="hover:text-amber-400">Handwriting</a></li>
+            <li><a href="programs.html#chess" class="hover:text-amber-400">Chess Academy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3">Contact</h4>
+          <div class="space-y-2 text-slate-400">
+            <div>WhatsApp: <a href="https://wa.me/919703822227" target="_blank" class="text-emerald-400 font-bold hover:underline">+91 97038 22227</a></div>
+            <div>Hours: Mon-Sat 4:00 PM – 8:30 PM | Sun 9:00 AM – 1:00 PM</div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 text-center text-slate-500">
+        © 2026 REA Abacus and Tuition Point. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Fixed WhatsApp Pill (Desktop & Mobile) -->
+  <a href="https://wa.me/919703822227?text=Hello%20REA%20Abacus!%20I%20would%20like%20to%20know%20more%20about%20your%20classes." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 py-3 rounded-full shadow-2xl flex items-center gap-2.5 transition transform hover:scale-105 border-2 border-white/30" aria-label="Chat on WhatsApp">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <span class="text-sm hidden sm:inline">Chat on WhatsApp</span>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
