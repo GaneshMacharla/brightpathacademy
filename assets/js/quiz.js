@@ -1,5 +1,5 @@
 /**
- * REA Abacus & Tuition Point
+ * Bright Path Academy
  * Course Finder Quiz & Speed Math Arcade Engine
  */
 
@@ -40,10 +40,11 @@ function initCourseQuiz() {
       title: 'What is your primary focus for them?',
       subtitle: 'Select the primary skill or improvement area you desire most.',
       options: [
+        { label: 'Phonics, English Reading & Spellings', value: 'phonics', icon: '🔤', tag: 'Phonics Fun' },
         { label: 'Lightning Mental Math & Calculation Speed', value: 'abacus', icon: '🧮', tag: 'Abacus / Vedic' },
         { label: 'School Subject Tuitions & Exam Scores', value: 'tuition', icon: '📚', tag: 'CBSE / ICSE / SSC' },
         { label: 'Neat Handwriting & Speed Writing', value: 'handwriting', icon: '✍️', tag: 'Handwriting Mastery' },
-        { label: 'Focus, Brain Power & Chess / Cube Tactics', value: 'brain', icon: '♟️', tag: 'Cognitive Boost' }
+        { label: 'Mandala Art & Creative Focus', value: 'art', icon: '🎨', tag: 'Mindfulness & Art' }
       ]
     },
     {
@@ -133,14 +134,30 @@ function initCourseQuiz() {
   function renderRecommendation() {
     const { age, goal, board } = quizData.answers;
     let rec = {
-      title: 'Soroban Abacus & Mental Math Foundation',
+      title: 'Soroban Abacus & Mental Math Mastery',
       badge: 'Best Match for Cognitive Growth',
-      description: 'Accelerate left and right brain coordination, mental arithmetic speed, and deep concentration through REA’s proven Soroban Abacus curriculum.',
-      highlights: ['8 Structured Progressive Levels', 'Small Batches (Max 8-10 students)', 'Interactive Soroban Tool Included', 'International Competition Readiness'],
+      description: 'Accelerate left and right brain coordination, mental arithmetic speed, and deep concentration through Bright Path Academy’s proven Soroban Abacus curriculum.',
+      highlights: ['8 Structured Progressive Levels', 'Small Batches (Max 8 students)', 'Interactive Soroban Tool Included', 'State & National Competition Readiness'],
       programLink: 'programs.html#abacus'
     };
 
-    if (goal === 'tuition' || age === '11-15') {
+    if (goal === 'phonics') {
+      rec = {
+        title: 'Phonics Fun & English Reading Mastery',
+        badge: 'Top Pick for Reading & Spelling Fluency',
+        description: 'Empower your child with joyful reading confidence, 44 phonics sounds, multi-sensory blending, and decoded spelling rules (e.g. C vs K, -k vs -ck).',
+        highlights: ['Independent Book Reading', 'Spelling Rules Demystified', '3D Vocabulary Building', 'Online & Offline Batches'],
+        programLink: 'programs.html#phonics'
+      };
+    } else if (goal === 'art') {
+      rec = {
+        title: 'Mandala Art Classes for Kids & Traditional Art',
+        badge: 'Creative Mindfulness Booster',
+        description: 'Cultivate deep focus, fine motor precision, symmetry, and patience through captivating mandala geometry and traditional art styles.',
+        highlights: ['Mindfulness & Digital Detox', 'Geometric Symmetry & Pen Techniques', 'Student Art Showcase', 'Weekend Studio Batches'],
+        programLink: 'programs.html#art'
+      };
+    } else if (goal === 'tuition' || age === '11-15') {
       rec = {
         title: 'Mastery Academic Tuitions & Concept Coaching',
         badge: 'Top Choice for Academic Excellence',
@@ -156,18 +173,10 @@ function initCourseQuiz() {
         highlights: ['Guaranteed Improvement in 30 Days', 'Posture & Grip Correction', 'Speed + Legibility Balance', 'Exam-Ready Presentation Style'],
         programLink: 'programs.html#handwriting'
       };
-    } else if (goal === 'brain') {
-      rec = {
-        title: 'Tactical Chess & Rubik’s Cube Brain Booster',
-        badge: 'Strategic Mind Development',
-        description: 'Cultivate sharp strategic foresight, 3D spatial thinking, patience, and memory through FIDE-based chess coaching and algorithmic speed cubing.',
-        highlights: ['FIDE Certified Methodology', 'Algorithms for 3x3 to 5x5 Cubes', 'Weekend Tournament Simulations', 'Analytical Brain Gymnastics'],
-        programLink: 'programs.html#chess'
-      };
     }
 
     const whatsappText = encodeURIComponent(
-      `Hello REA Abacus! I took your Course Quiz for my child (Age: ${age}, Goal: ${goal}, Board: ${board}). I would like to book a Free Demo Class for "${rec.title}".`
+      `Hello Bright Path Academy! I took your Course Quiz for my child (Age: ${age}, Goal: ${goal}, Board: ${board}). I would like to book a Free Demo Class for "${rec.title}".`
     );
 
     quizContainer.innerHTML = `
@@ -431,7 +440,7 @@ function initSpeedMathArcade() {
         </div>
 
         <p class="text-xs sm:text-sm text-slate-300 max-w-sm mx-auto mb-6">
-          With just 3 months of REA Abacus training, students multiply their calculation speed by <span class="text-amber-400 font-bold">5x to 10x</span>!
+          With just 3 months of Bright Path Academy Abacus training, students multiply their calculation speed by <span class="text-amber-400 font-bold">5x to 10x</span>!
         </p>
 
         <div class="flex flex-col sm:flex-row justify-center gap-3">

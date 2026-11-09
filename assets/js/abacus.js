@@ -1,5 +1,5 @@
 /**
- * REA Soroban Abacus Interactive Simulator & Speed Math Game Engine
+ * Bright Path Academy - Soroban Abacus Interactive Simulator & Speed Math Game Engine
  * Features:
  * - 7-Rod Standard Japanese Soroban (1 upper bead = 5, 4 lower beads = 1)
  * - Authentic Web Audio API bead click sounds

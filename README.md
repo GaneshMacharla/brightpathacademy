@@ -1,63 +1,72 @@
-# REA Abacus & Tuition Point - Official Website
+# Bright Path Academy - Official Website
 
-A high-performance, modern, and interactive static website built for **REA Abacus and Tuition Point**, Kakatiya Hills, Pragathi Nagar, Hyderabad.
+A high-performance, modern, and interactive static website built for **Bright Path Academy** (`@brightpath_pragatinagar`), located at NRI Colony, Kakatiya Hills, Pragati Nagar, Hyderabad.
 
-**Reference Listing:** [Justdial - Rea Abacus And Tuition Point Kakatiya Hills](https://www.justdial.com/Hyderabad/Rea-Abacus-And-Tuition-Point-Kakatiya-Hills/040PXX40-XX40-240126121232-Q1T2_BZDET)
+**Tagline:** *Learn and Grow • Online & Offline Classes*  
+**Social Handles:** 
+- Instagram: [@brightpath_pragatinagar](https://www.instagram.com/brightpath_pragatinagar/)
+- YouTube: [@brightpathwaysofficial](https://www.youtube.com/@brightpathwaysofficial?si=dp4J101qpP7qb31Km)
 
 ---
 
-## 🌟 Key Highlights & Features
+## 🌟 Key Highlights & Educational Offerings
 
-1. **Interactive Virtual Soroban Abacus**:
+1. **Phonics Fun & English Reading Skills**:
+   - Sound-to-letter decoding (44 phonics sounds) without rote memorization.
+   - Demystifying English spelling rules (e.g., Why *"Cat"* vs *"Kite"*, *"-k"* vs *"-ck"*).
+   - Rich vocabulary building, 3D visual language cues, and confident independent reading.
+
+2. **Interactive Virtual Soroban Abacus**:
    - Realistic 7-rod Japanese Soroban simulator (`abacus-trainer.html` & homepage preview).
    - Bi-conical beads with upper deck (value 5) and lower deck (value 1).
    - Real-time place value calculation (Units, Tens, Hundreds, Thousands up to 100K).
    - Authentic clicking audio synthesized via the browser's native **Web Audio API**.
-   - Preset number generators ("Set 2026", "Set 999", "Set 75", "Random Challenge").
+   - Preset number generators ("Set 2026", "Set 999", "Set 75").
 
-2. **30-Second Speed Math Arcade Game**:
-   - 3 difficulty levels: Junior (Ages 4-7), Master (Ages 8-11), Super Champ (12+).
-   - Live timer, combo streak tracker, score multiplier, and celebratory feedback.
-   - Direct WhatsApp integration to claim a Free Demo Class with earned score!
+3. **Vedic Maths Pro**:
+   - Ancient 16-Sutra mathematical speed shortcuts for Grade 6 & above.
+   - Rapid multi-digit multiplication, square roots, cube roots, and algebra in seconds.
+   - Foundation for Olympiads, NTSE, and high school board exams.
 
-3. **Interactive Course Recommender / Quiz**:
-   - 3-step personalized quiz on the homepage to find the right curriculum based on child age, learning goals, and school board (CBSE, ICSE, SSC).
+4. **Handwriting Skills (30 Days)**:
+   - Tripod pencil/pen grip correction and wrist posture alignment.
+   - Print to Cursive transition and speed writing for 3-hour school examinations.
 
-4. **Transparent Fee & Sibling Discount Calculator**:
-   - Real-time fee estimation with 15% sibling discount toggle and batch schedule explorer.
+5. **Mandala Art Classes for Kids & Traditional Art**:
+   - Circular geometric symmetry, fine motor control, and digital detox mindfulness.
+   - Exhibition showcase of student artistic portfolios.
 
-5. **WhatsApp & Phone Direct Bridge**:
-   - One-click booking modal that formats enrollment inquiries with student details and dispatches directly to WhatsApp (`+91 97038 22227`).
-   - Click-to-call links across mobile and desktop.
+6. **School Subject Tuitions (Classes 1 to 10)**:
+   - Tailored concept coaching for CBSE, ICSE, and SSC (State Board) curricula.
+   - Small batches (capped at 8 students) with daily homework assistance and weekly chapter tests.
 
-6. **Comprehensive 8-Level Abacus & Subject Syllabus**:
-   - Detailed breakdown of all 8 Abacus certification levels.
-   - Classes 1 to 10 tuition details for CBSE, ICSE, and SSC boards.
-   - Vedic Mathematics, 30-Day Handwriting Mastery, Chess Academy, and Rubik's Cube workshops.
+7. **Flexible Learning Modes**:
+   - **Offline Classes**: At NRI Colony, Pragati Nagar center.
+   - **Online Classes**: Live interactive sessions accessible from anywhere.
 
-7. **Local SEO & Location Readiness**:
-   - Flat No. 102, Sai Sadguru Residency, Kakatiya Hills, NRI Colony, Pragati Nagar, Hyderabad - 500090.
-   - Embedded Google Map, landmark navigation, and neighborhood references.
+8. **Direct WhatsApp Bridge**:
+   - One-click inquiry links connecting directly to WhatsApp (`+91 97038 22227`).
 
 ---
 
 ## 📁 Directory Structure
 
 ```
-abacustutionpoint/
-├── index.html              # Homepage with hero, interactive abacus teaser, programs, quiz & reviews
-├── about.html              # Story, mission, whole-brain dual-hand pedagogy, and classroom safety
-├── programs.html           # In-depth 8-level syllabus, Classes 1-10 tuitions, Vedic Maths & skills
-├── abacus-trainer.html     # Dedicated Full-Page Virtual Soroban Simulator & Speed Math Game
-├── admissions.html         # Batch schedules, fee transparency, sibling discounts, online registration
-├── contact.html            # Contact directory, Google Map embed, directions & inquiry form
+brightpathacademy/
+├── index.html              # Homepage with hero, interactive abacus teaser, programs, social hub & reviews
+├── about.html              # Story, mission, vision, dual-brain pedagogy, and classroom values
+├── programs.html           # In-depth syllabuses for Phonics, Abacus 8-Levels, Vedic Maths, Handwriting & Tuitions
+├── abacus-trainer.html     # Dedicated Full-Page Virtual Soroban Simulator & place value explainer
+├── admissions.html         # Batch schedules, fee transparency, sibling discounts, onboarding guide
+├── contact.html            # Contact directory, Google Map embed, directions & inquiry shortcuts
 ├── assets/
 │   ├── css/
 │   │   └── styles.css      # Custom styling, bead physics, animations, and glassmorphism
-│   └── js/
-│       ├── main.js         # Navigation, modals, FAQ accordions, fee calculator & WhatsApp bridge
-│       ├── abacus.js       # Soroban Abacus simulation engine & Web Audio synthesizer
-│       └── quiz.js         # Course recommendation wizard & Speed Math arcade game
+│   ├── js/
+│   │   ├── main.js         # Navigation, sticky header, mobile drawer & active nav link
+│   │   ├── abacus.js       # Soroban Abacus simulation engine & Web Audio synthesizer
+│   │   └── quiz.js         # Course recommendation wizard & Speed Math arcade game
+│   └── images/             # Academy flyers, Instagram screenshots and social banners
 └── README.md               # Documentation
 ```
 
@@ -82,8 +91,11 @@ Then visit: `http://localhost:8080`
 
 ---
 
-## 📞 Institution Contact Information
-* **Name:** REA Abacus & Tuition Point
+## 📞 Academy Contact Information
+* **Academy Name:** Bright Path Academy
+* **Tagline:** Learn and Grow
 * **Phone / WhatsApp:** [+91 97038 22227](tel:+919703822227)
+* **Instagram:** [@brightpath_pragatinagar](https://www.instagram.com/brightpath_pragatinagar/)
+* **YouTube:** [@brightpathwaysofficial](https://www.youtube.com/@brightpathwaysofficial?si=dp4J101qpP7qb31Km)
 * **Address:** Flat No. 102, Sai Sadguru Residency, Kakatiya Hills, NRI Colony, Pragati Nagar, Hyderabad, Telangana — 500090
 * **Hours:** Mon–Sat: 4:00 PM – 8:30 PM | Sun: 9:00 AM – 1:00 PM

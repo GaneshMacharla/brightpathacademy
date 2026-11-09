@@ -1,5 +1,5 @@
 /**
- * REA Abacus & Tuition Point - Core Script
+ * Bright Path Academy - Core Script
  * Static Website Navigation & Mobile Drawer
  */
 
