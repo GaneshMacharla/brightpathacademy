@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initStickyHeader();
   initFAQ();
-  initActiveNavLink();
 });
 
 /* Mobile Menu Toggle */
@@ -15,43 +14,71 @@ function initMobileMenu() {
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   const closeBtn = document.getElementById('mobile-menu-close');
+  if (!menuBtn || !mobileMenu || !closeBtn) return;
 
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-      document.body.classList.toggle('overflow-hidden');
-    });
+  const isOpen = () => mobileMenu.classList.contains('is-open');
 
-    if (closeBtn) {
-      closeBtn.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
-      });
-    }
-
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
-      });
-    });
+  function openMenu() {
+    mobileMenu.classList.add('is-open');
+    document.body.classList.add('overflow-hidden');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    closeBtn.focus();
   }
+
+  function closeMenu({ restoreFocus = true } = {}) {
+    if (!isOpen()) return;
+    mobileMenu.classList.remove('is-open');
+    document.body.classList.remove('overflow-hidden');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    if (restoreFocus) menuBtn.focus();
+  }
+
+  menuBtn.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', () => closeMenu());
+
+  mobileMenu.querySelectorAll('[data-menu-close]').forEach(el => {
+    el.addEventListener('click', () => closeMenu());
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => closeMenu({ restoreFocus: false }));
+  });
+
+  // Esc closes the drawer; Tab stays inside it while it is open
+  document.addEventListener('keydown', event => {
+    if (!isOpen()) return;
+
+    if (event.key === 'Escape') {
+      closeMenu();
+    } else if (event.key === 'Tab') {
+      const focusable = mobileMenu.querySelectorAll('a[href], button');
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+  });
+
+  // The drawer is hidden from 1024px up, so release the scroll lock there
+  window.matchMedia('(min-width: 1024px)').addEventListener('change', event => {
+    if (event.matches) closeMenu({ restoreFocus: false });
+  });
 }
 
-/* Sticky Header on Scroll */
+/* Header shadow once the page has scrolled */
 function initStickyHeader() {
   const header = document.getElementById('main-header');
   if (!header) return;
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
-      header.classList.add('shadow-md', 'bg-white/95', 'backdrop-blur-md');
-      header.classList.remove('bg-white');
-    } else {
-      header.classList.remove('shadow-md', 'backdrop-blur-md');
-      header.classList.add('bg-white');
-    }
-  });
+  const update = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+  update();
+  window.addEventListener('scroll', update, { passive: true });
 }
 
 /* FAQ Accordion */
@@ -88,16 +115,3 @@ function initFAQ() {
   });
 }
 
-/* Highlight Active Nav Link */
-function initActiveNavLink() {
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('header nav a, #mobile-menu a');
-
-  navLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-      link.classList.add('text-blue-600', 'font-bold');
-      link.classList.remove('text-slate-600', 'text-slate-700');
-    }
-  });
-}
