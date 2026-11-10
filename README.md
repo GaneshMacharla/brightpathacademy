@@ -5,7 +5,7 @@ A high-performance, modern, and interactive static website built for **Bright Pa
 **Tagline:** *Learn and Grow • Online & Offline Classes*  
 **Social Handles:** 
 - Instagram: [@brightpath_pragatinagar](https://www.instagram.com/brightpath_pragatinagar/)
-- YouTube: [@brightpathwaysofficial](https://www.youtube.com/@brightpathwaysofficial?si=dp4J101qpP7qb31Km)
+- YouTube: [@brightpathacademyedu](https://www.youtube.com/@brightpathacademyedu)
 
 ---
 
@@ -88,6 +88,6 @@ Then visit: `http://localhost:8080`
 * **Tagline:** Learn and Grow
 * **Phone / WhatsApp:** [+91 97038 22227](tel:+919703822227)
 * **Instagram:** [@brightpath_pragatinagar](https://www.instagram.com/brightpath_pragatinagar/)
-* **YouTube:** [@brightpathwaysofficial](https://www.youtube.com/@brightpathwaysofficial?si=dp4J101qpP7qb31Km)
+* **YouTube:** [@brightpathacademyedu](https://www.youtube.com/@brightpathacademyedu)
 * **Address:** Flat No. 102, Sai Sadguru Residency, Kakatiya Hills, NRI Colony, Pragati Nagar, Hyderabad, Telangana — 500090
 * **Hours:** Mon–Sat: 10:00 AM – 9:00 PM | Sun: 9:00 AM – 4:00 PM
