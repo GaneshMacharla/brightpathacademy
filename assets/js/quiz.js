@@ -30,7 +30,7 @@ function initCourseQuiz() {
       title: 'How old is your child?',
       subtitle: 'We customize curriculum based on cognitive developmental milestones.',
       options: [
-        { label: '4 to 6 Years', value: '4-6', icon: '🐣', tag: 'Junior Foundation' },
+        { label: '5 to 6 Years', value: '5-6', icon: '🐣', tag: 'Junior Foundation' },
         { label: '7 to 10 Years', value: '7-10', icon: '🚀', tag: 'Elementary Growth' },
         { label: '11 to 15 Years', value: '11-15', icon: '🎯', tag: 'Middle / High School' }
       ]
@@ -318,7 +318,7 @@ function initSpeedMathArcade() {
           </p>
 
           <div class="flex justify-center gap-2 mb-6">
-            <button class="diff-btn px-4 py-2 rounded-xl text-xs font-bold transition ${gameState.difficulty === 'easy' ? 'bg-amber-400 text-slate-900 shadow' : 'bg-white/10 text-slate-300'}" data-diff="easy">Junior (Ages 4-7)</button>
+            <button class="diff-btn px-4 py-2 rounded-xl text-xs font-bold transition ${gameState.difficulty === 'easy' ? 'bg-amber-400 text-slate-900 shadow' : 'bg-white/10 text-slate-300'}" data-diff="easy">Junior (Ages 5-7)</button>
             <button class="diff-btn px-4 py-2 rounded-xl text-xs font-bold transition ${gameState.difficulty === 'medium' ? 'bg-amber-400 text-slate-900 shadow' : 'bg-white/10 text-slate-300'}" data-diff="medium">Master (Ages 8-11)</button>
             <button class="diff-btn px-4 py-2 rounded-xl text-xs font-bold transition ${gameState.difficulty === 'hard' ? 'bg-amber-400 text-slate-900 shadow' : 'bg-white/10 text-slate-300'}" data-diff="hard">Super Champ (12+)</button>
           </div>

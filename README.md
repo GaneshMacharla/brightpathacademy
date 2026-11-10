@@ -11,36 +11,28 @@ A high-performance, modern, and interactive static website built for **Bright Pa
 
 ## 🌟 Key Highlights & Educational Offerings
 
-1. **Phonics Fun & English Reading Skills**:
+1. **Phonics & Grammar** (Ages 5 & above):
    - Sound-to-letter decoding (44 phonics sounds) without rote memorization.
-   - Demystifying English spelling rules (e.g., Why *"Cat"* vs *"Kite"*, *"-k"* vs *"-ck"*).
-   - Rich vocabulary building, 3D visual language cues, and confident independent reading.
+   - Logic-based spelling rules (e.g., Why *"Cat"* vs *"Kite"*, *"-k"* vs *"-ck"*) and core grammar.
 
-2. **Interactive Virtual Soroban Abacus**:
-   - Realistic 7-rod Japanese Soroban simulator (`abacus-trainer.html` & homepage preview).
-   - Bi-conical beads with upper deck (value 5) and lower deck (value 1).
-   - Real-time place value calculation (Units, Tens, Hundreds, Thousands up to 100K).
-   - Authentic clicking audio synthesized via the browser's native **Web Audio API**.
-   - Preset number generators ("Set 2026", "Set 999", "Set 75").
+2. **Abacus & Vedic Maths**:
+   - Soroban Abacus (Ages 5–12): 8 certification levels and Anzan mental visualization.
+   - Vedic Maths (Class 4 & above): 16-Sutra speed shortcuts.
+   - Interactive 7-rod virtual Soroban simulator (`abacus-trainer.html` & homepage preview) with Web Audio bead clicks.
 
-3. **Vedic Maths Pro**:
-   - Ancient 16-Sutra mathematical speed shortcuts for Grade 6 & above.
-   - Rapid multi-digit multiplication, square roots, cube roots, and algebra in seconds.
-   - Foundation for Olympiads, NTSE, and high school board exams.
+3. **Handwriting & Drawing**:
+   - Grip and posture correction, print and cursive writing.
+   - Drawing classes (Ages 7 & above): sketching, colouring and shading.
 
-4. **Handwriting Skills (30 Days)**:
-   - Tripod pencil/pen grip correction and wrist posture alignment.
-   - Print to Cursive transition and speed writing for 3-hour school examinations.
+4. **Vocabulary & Content Writing**
 
-5. **Mandala Art Classes for Kids & Traditional Art**:
-   - Circular geometric symmetry, fine motor control, and digital detox mindfulness.
-   - Exhibition showcase of student artistic portfolios.
+5. **Telugu & Hindi Basics**
 
-6. **School Subject Tuitions (Classes 1 to 10)**:
-   - Tailored concept coaching for CBSE, ICSE, and SSC (State Board) curricula.
-   - Small batches (capped at 8 students) with daily homework assistance and weekly chapter tests.
+6. **Olympiad Assistance**
 
-7. **Flexible Learning Modes**:
+7. **Summer Camp Activities**
+
+8. **Flexible Learning Modes**:
    - **Offline Classes**: At NRI Colony, Pragati Nagar center.
    - **Online Classes**: Live interactive sessions accessible from anywhere.
 
@@ -55,7 +47,7 @@ A high-performance, modern, and interactive static website built for **Bright Pa
 brightpathacademy/
 ├── index.html              # Homepage with hero, interactive abacus teaser, programs, social hub & reviews
 ├── about.html              # Story, mission, vision, dual-brain pedagogy, and classroom values
-├── programs.html           # In-depth syllabuses for Phonics, Abacus 8-Levels, Vedic Maths, Handwriting & Tuitions
+├── programs.html           # In-depth syllabuses for all 7 courses
 ├── abacus-trainer.html     # Dedicated Full-Page Virtual Soroban Simulator & place value explainer
 ├── admissions.html         # Batch schedules, fee transparency, sibling discounts, onboarding guide
 ├── contact.html            # Contact directory, Google Map embed, directions & inquiry shortcuts
