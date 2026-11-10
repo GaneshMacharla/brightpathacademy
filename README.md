@@ -49,7 +49,7 @@ brightpathacademy/
 ├── about.html              # Story, mission, vision, dual-brain pedagogy, and classroom values
 ├── programs.html           # In-depth syllabuses for all 7 courses
 ├── abacus-trainer.html     # Dedicated Full-Page Virtual Soroban Simulator & place value explainer
-├── admissions.html         # Batch schedules, fee transparency, sibling discounts, onboarding guide
+├── admissions.html         # Batch schedules and onboarding guide
 ├── contact.html            # Contact directory, Google Map embed, directions & inquiry shortcuts
 ├── assets/
 │   ├── css/
@@ -90,4 +90,4 @@ Then visit: `http://localhost:8080`
 * **Instagram:** [@brightpath_pragatinagar](https://www.instagram.com/brightpath_pragatinagar/)
 * **YouTube:** [@brightpathwaysofficial](https://www.youtube.com/@brightpathwaysofficial?si=dp4J101qpP7qb31Km)
 * **Address:** Flat No. 102, Sai Sadguru Residency, Kakatiya Hills, NRI Colony, Pragati Nagar, Hyderabad, Telangana — 500090
-* **Hours:** Mon–Sat: 4:00 PM – 8:30 PM | Sun: 9:00 AM – 1:00 PM
+* **Hours:** Mon–Sat: 10:00 AM – 9:00 PM | Sun: 9:00 AM – 4:00 PM
